@@ -10,7 +10,11 @@
 <body>
 </body>
 <script type="text/javascript">
+  var ctx = document.createElement('canvas');
+  var body = document.getElementsByTagName('body')[0];
+  body.appendChild(ctx);
+  ctx = ctx.getContext('2d');
   var arrow = new arrow();
-  arrow.draw();
+  arrow.draw(ctx);
 </script>
 </html>
